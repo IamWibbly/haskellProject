@@ -1,7 +1,9 @@
 # Controllers
-- Criar controller da lista de lanchonetes
++ Criar controller da lista de lanchonetes
+- Pegar a lista via webservice
 
 # Views
-- Baixar Materialize.css
-- Fazer a lista - ng-repeat
++ Baixar Materialize.css
++ Fazer a lista - ng-repeat
+- Fazer a view de produtos de cada lanchonete
 

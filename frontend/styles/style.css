@@ -4,3 +4,8 @@
   margin-top: 50px;
   text-align: center;
 }
+
+.links li{
+  float: left;
+  width: 50%;
+}
