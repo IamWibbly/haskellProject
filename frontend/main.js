@@ -1,21 +1,25 @@
 angular.module('webapp',['ngRoute'])
-  .config(function($routeProvider,$locationProvider){
+.config(function($routeProvider,$locationProvider){
   $locationProvider.html5Mode(true);
 
   $routeProvider
-    .when('/',{
+  .when('/',{
     templateUrl:'views/listaLanchonetes.html',
     controller:'ListaController as lista'
   })
-    .when('/lista',{
+  .when('/lista',{
     templateUrl:'views/listaLanchonetes.html',
     controller:'ListaController as lista'
   })
-    .when('/produtos',{
+  .when('/produtos',{
     templateUrl:'views/listaProdutos.html',
     controller:'ProdutosController as produtos'
   })
-    .otherwise({
+  .when('/cadastro',{
+    templateUrl:'views/cadastroLanchonete.html',
+    controller:'CadastroLanchoneteController as cadastroLanchonete'
+  })
+  .otherwise({
     redirectTo:'/'
   });
 });
